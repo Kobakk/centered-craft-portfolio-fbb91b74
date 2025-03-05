@@ -159,16 +159,15 @@ const Index = () => {
               className="bg-black/10 p-6 rounded-lg"
             >
               <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                <h3 className="job-title">Ayudante de cocina</h3>
+                <h3 className="job-title">Desarrollador en PanoImagen</h3>
                 <div>
-                  <span className="job-place">El rey de los tacos</span>
+                  <span className="job-place">PanoImagen</span>
                   <span className="mx-2">-</span>
-                  <span className="job-date">2023</span>
+                  <span className="job-date">2024</span>
                 </div>
               </div>
               <p className="job-description">
-                Preparación de comida mexicana, donde aprendí a manejar la presión. Y prepara buean 
-                comida 🌮.
+                Ejecuté proyectos de manejo de datos para clientes de PanoImagen, implementando soluciones de web scraping con Python/Selenium y automatizando el procesamiento de grandes volúmenes de PDFs. Desarrollé scripts eficientes con Jupyter Notebook, Pandas y WSL que transformaron datos no estructurados en información accionable, reduciendo tiempos de procesamiento y mejorando la toma de decisiones del cliente.
               </p>
             </motion.div>
           </div>
