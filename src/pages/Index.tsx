@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Github, Linkedin, FileType } from "lucide-react";
 import Navbar from "../components/Navbar";
@@ -66,7 +65,7 @@ const Index = () => {
           >
             <div className="w-32 h-32 mb-3 overflow-hidden">
               <img 
-                src="/lovable-uploads/550b9c37-0b2e-4f08-8bcf-3e17586ba578.png" 
+                src="/lovable-uploads/eaa3918e-ad47-4bfa-9e94-d202b6c8fa6f.png" 
                 alt="Perfil"
                 className="rounded-full w-full h-full object-cover border-2 border-[#8bd8bd]"
               />
@@ -234,7 +233,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <motion.div variants={itemVariants} className="w-32 h-32 overflow-hidden flex-shrink-0">
               <img 
-                src="/lovable-uploads/550b9c37-0b2e-4f08-8bcf-3e17586ba578.png"
+                src="/lovable-uploads/eaa3918e-ad47-4bfa-9e94-d202b6c8fa6f.png"
                 alt="Perfil" 
                 className="rounded-full w-full h-full object-cover border-2 border-[#8bd8bd]"
               />
