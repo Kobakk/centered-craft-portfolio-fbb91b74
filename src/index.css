@@ -101,6 +101,24 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.tech-button {
+  background-color: rgba(139, 216, 189, 0.15);
+  color: #8bd8bd;
+  border-radius: 9999px;
+  padding: 0.3rem 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  transition: all 0.2s;
+  border: 1px solid rgba(139, 216, 189, 0.3);
+}
+
+.tech-button:hover {
+  background-color: rgba(139, 216, 189, 0.25);
+  border-color: rgba(139, 216, 189, 0.5);
+}
+
 .job-title {
   color: #8bd8bd;
   font-weight: 600;
@@ -122,4 +140,3 @@ body {
   line-height: 1.5;
   margin-top: 0.75rem;
 }
-

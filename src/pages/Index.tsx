@@ -1,5 +1,6 @@
+
 import { motion } from "framer-motion";
-import { Github, Linkedin, FileType } from "lucide-react";
+import { Github, Linkedin, FileType, Code, ServerCog } from "lucide-react";
 import Navbar from "../components/Navbar";
 
 const Index = () => {
@@ -152,6 +153,32 @@ const Index = () => {
                 campañas de marketing. Soporte ténico online y presencial sobre hardware, hardware, 
                 red. Para los miembros de la empresa.
               </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                <motion.button 
+                  className="tech-button"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Code size={14} />
+                  WordPress
+                </motion.button>
+                <motion.button 
+                  className="tech-button"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <ServerCog size={14} />
+                  Hosting
+                </motion.button>
+                <motion.button 
+                  className="tech-button"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Code size={14} />
+                  SEO
+                </motion.button>
+              </div>
             </motion.div>
 
             <motion.div 
@@ -169,6 +196,48 @@ const Index = () => {
               <p className="job-description">
                 Ejecuté proyectos de manejo de datos para clientes de PanoImagen, implementando soluciones de web scraping con Python/Selenium y automatizando el procesamiento de grandes volúmenes de PDFs. Desarrollé scripts eficientes con Jupyter Notebook, Pandas y WSL que transformaron datos no estructurados en información accionable, reduciendo tiempos de procesamiento y mejorando la toma de decisiones del cliente.
               </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                <motion.button 
+                  className="tech-button"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Code size={14} />
+                  Python
+                </motion.button>
+                <motion.button 
+                  className="tech-button"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Code size={14} />
+                  Selenium
+                </motion.button>
+                <motion.button 
+                  className="tech-button"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Code size={14} />
+                  Pandas
+                </motion.button>
+                <motion.button 
+                  className="tech-button"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <ServerCog size={14} />
+                  WSL
+                </motion.button>
+                <motion.button 
+                  className="tech-button"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Code size={14} />
+                  Jupyter
+                </motion.button>
+              </div>
             </motion.div>
           </div>
         </motion.section>
