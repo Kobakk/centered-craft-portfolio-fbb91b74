@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Github, Linkedin, FileType, Code, ServerCog, ExternalLink } from "lucide-react";
 import Navbar from "../components/Navbar";
@@ -275,7 +274,34 @@ const Index = () => {
               </div>
             </motion.a>
             
-            {[2, 3, 4].map((project) => (
+            <motion.a 
+              href="https://elreydelostacos.es/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-black/10 rounded-lg overflow-hidden group"
+              variants={projectVariants}
+              whileHover="hover"
+            >
+              <div className="aspect-video bg-white/5 relative">
+                <img 
+                  src="/lovable-uploads/68fe286e-28fc-481a-a9ad-f4942bfd6c70.png" 
+                  alt="El Rey de los Tacos"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <ExternalLink className="text-white w-8 h-8" />
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-semibold mb-2 text-[#8bd8bd] flex items-center">
+                  {t('project2.title')}
+                  <ExternalLink size={16} className="ml-2 opacity-70" />
+                </h3>
+                <p className="text-sm">{t('project2.description')}</p>
+              </div>
+            </motion.a>
+            
+            {[3, 4].map((project) => (
               <motion.div 
                 key={project}
                 className="bg-black/10 rounded-lg overflow-hidden"
