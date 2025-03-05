@@ -183,7 +183,7 @@ const Index = () => {
               className="bg-black/10 p-6 rounded-lg"
             >
               <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                <h3 className="job-title">Desarrollador en PanoImagen</h3>
+                <h3 className="job-title">Desarrollador Python</h3>
                 <div>
                   <span className="job-place">PanoImagen</span>
                   <span className="mx-2">-</span>
