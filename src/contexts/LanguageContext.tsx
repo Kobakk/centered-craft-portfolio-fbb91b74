@@ -28,6 +28,8 @@ const translations = {
     'section.projects': 'Work / Projects',
     'project1.title': 'Web Reform',
     'project1.description': 'Contact page and portfolio for reform company. Responsive, accessible with SEO.',
+    'project2.title': 'Restaurant Website',
+    'project2.description': 'Restaurant page with contact, reservation, and menu features created with WordPress.',
     'project.description': 'Brief description of project',
     'section.about': 'About Me',
     'about.p1': 'I am an enthusiast of programming and web design, ever since I was little I was interested in artistic/design topics that I have developed through illustration and drawing 🎨.',
@@ -52,10 +54,12 @@ const translations = {
     'section.projects': 'Trabajos / Proyectos',
     'project1.title': 'Web Reforma',
     'project1.description': 'Pagina de contacto y portfolio para empresa de reforma. Responsive, accesible con SEO.',
+    'project2.title': 'Web Restaurante',
+    'project2.description': 'Pagina de restaurante contacto, reserva, carta realizado con Wordpress',
     'project.description': 'Descripción breve del proyecto',
     'section.about': 'Sobre mí',
     'about.p1': 'Soy una persona entusiasta de la programacion y el diseño web, desde pequeño estaba interesado por el tema artístico/diseño que he desarrollado por medio de la ilustración y dibujo 🎨.',
-    'about.p2': 'Duarante la pandemia comence el grado de sistemas con el que aprendí linux y cómo manejo de servidores y redes, acabandolo en 2022 y comenzando el grado de desarrollo web acabandolo hace un tiempo.',
+    'about.p2': 'Duarante la pandemia comence el grado de sistemas con el que aprendí linux y manejo de servidores y redes, acabandolo en 2022 y comenzando el grado de desarrollo web acabandolo hace un tiempo.',
     'footer.copyright': 'Copyright © 2024 sevdev'
   }
 };
