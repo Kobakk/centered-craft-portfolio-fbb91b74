@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const links = [
-    { name: "Projects", href: "/projects" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "Presentación", href: "/" },
+    { name: "Proyectos", href: "/projects" },
+    { name: "Contacto", href: "/contact" },
   ];
 
   const navVariants = {
@@ -37,39 +37,40 @@ const Navbar = () => {
       variants={navVariants}
       className="py-6 mb-12"
     >
-      <div className="max-w-2xl mx-auto px-4">
-        <div className="flex justify-center items-center space-x-8">
-          <motion.div whileHover="hover" variants={linkVariants}>
-            <Link to="/" className="text-xl font-mono hover:text-neutral transition-colors">
-              Portfolio
+      <div className="max-w-3xl mx-auto px-4">
+        <div className="flex justify-between items-center">
+          <motion.div 
+            whileHover="hover" 
+            variants={linkVariants}
+            className="text-xl font-mono tracking-wide"
+          >
+            <Link to="/" className="text-[#8bd8bd] hover:opacity-80 transition-opacity">
+              sevdev
             </Link>
           </motion.div>
-          <motion.div 
-            className="h-4 w-px bg-neutral/20"
-            initial={{ scaleY: 0 }}
-            animate={{ scaleY: 1 }}
-            transition={{ delay: 0.3, duration: 0.4 }}
-          />
-          {links.map((link, index) => (
-            <motion.div
-              key={link.name}
-              whileHover="hover"
-              variants={linkVariants}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ 
-                opacity: 1, 
-                y: 0,
-                transition: { delay: 0.3 + (index * 0.1) }
-              }}
-            >
-              <Link
-                to={link.href}
-                className="text-sm hover:text-neutral transition-colors"
+          
+          <div className="flex items-center space-x-8">
+            {links.map((link, index) => (
+              <motion.div
+                key={link.name}
+                whileHover="hover"
+                variants={linkVariants}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ 
+                  opacity: 1, 
+                  y: 0,
+                  transition: { delay: 0.3 + (index * 0.1) }
+                }}
               >
-                {link.name}
-              </Link>
-            </motion.div>
-          ))}
+                <Link
+                  to={link.href}
+                  className="text-sm hover:text-[#8bd8bd] transition-colors"
+                >
+                  {link.name}
+                </Link>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </motion.nav>
