@@ -1,12 +1,16 @@
 
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Globe } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const Navbar = () => {
+  const { language, setLanguage, t } = useLanguage();
+
   const links = [
-    { name: "Presentación", href: "/" },
-    { name: "Proyectos", href: "/projects" },
-    { name: "Contacto", href: "/contact" },
+    { name: t('nav.home'), href: "/" },
+    { name: t('nav.projects'), href: "/projects" },
+    { name: t('nav.contact'), href: "/contact" },
   ];
 
   const navVariants = {
@@ -28,6 +32,10 @@ const Navbar = () => {
         duration: 0.2
       }
     }
+  };
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'es' ? 'en' : 'es');
   };
 
   return (
@@ -70,6 +78,16 @@ const Navbar = () => {
                 </Link>
               </motion.div>
             ))}
+            <motion.button
+              whileHover="hover"
+              variants={linkVariants}
+              onClick={toggleLanguage}
+              className="flex items-center justify-center rounded-full p-2 bg-black/20 hover:bg-black/30 transition-colors"
+              aria-label="Toggle language"
+            >
+              <Globe size={16} className="text-[#8bd8bd]" />
+              <span className="ml-1 text-xs font-medium">{language.toUpperCase()}</span>
+            </motion.button>
           </div>
         </div>
       </div>
