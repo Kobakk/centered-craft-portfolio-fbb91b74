@@ -1,9 +1,11 @@
-
 import { motion } from "framer-motion";
 import { Github, Linkedin, FileType, Code, ServerCog } from "lucide-react";
 import Navbar from "../components/Navbar";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const Index = () => {
+  const { t } = useLanguage();
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -76,21 +78,21 @@ const Index = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Disponible para trabajar
+              {t('hero.available')}
             </motion.div>
           </motion.div>
 
           <motion.div variants={itemVariants} className="flex-1">
             <motion.h1 className="text-4xl font-bold mb-2 text-[#8bd8bd]">
-              Sebastián Vélez
+              {t('hero.name')}
             </motion.h1>
             
             <motion.h2 className="text-xl mb-4">
-              Web developer
+              {t('hero.jobTitle')}
             </motion.h2>
             
             <motion.p className="mb-4 text-justify">
-              👨‍💻 Programador con experiencia en desarrollo web y sistemas. Creo páginas optimizadas que generan resultados concretos. He desarrollado soluciones para empresas como <span className="highlight font-medium">North Market</span>, <span className="highlight font-medium">PanoImagen</span> y clientes independientes, implementando funcionalidades que automatizan procesos y mejoran conversiones.
+              {t('hero.description')}
             </motion.p>
 
             <div className="flex space-x-3 mb-6">
@@ -130,7 +132,7 @@ const Index = () => {
           variants={containerVariants}
           className="mb-16"
         >
-          <h2 className="section-title">Experiencia Laboral</h2>
+          <h2 className="section-title">{t('section.experience')}</h2>
           
           <div className="space-y-8">
             <motion.div 
@@ -138,17 +140,15 @@ const Index = () => {
               className="bg-black/10 p-6 rounded-lg"
             >
               <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                <h3 className="job-title">Técnico Informático / Desarrollo Web</h3>
+                <h3 className="job-title">{t('job1.title')}</h3>
                 <div>
-                  <span className="job-place">North Market</span>
+                  <span className="job-place">{t('job1.company')}</span>
                   <span className="mx-2">-</span>
                   <span className="job-date">2022</span>
                 </div>
               </div>
               <p className="job-description">
-                Creación de paginas web con WordPress, dominion, hosting, SEO y cookies. Para 
-                campañas de marketing. Soporte ténico online y presencial sobre hardware, hardware, 
-                red. Para los miembros de la empresa.
+                {t('job1.description')}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 <motion.button 
@@ -183,15 +183,15 @@ const Index = () => {
               className="bg-black/10 p-6 rounded-lg"
             >
               <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                <h3 className="job-title">Desarrollador Python</h3>
+                <h3 className="job-title">{t('job2.title')}</h3>
                 <div>
-                  <span className="job-place">PanoImagen</span>
+                  <span className="job-place">{t('job2.company')}</span>
                   <span className="mx-2">-</span>
                   <span className="job-date">2024</span>
                 </div>
               </div>
               <p className="job-description">
-                Ejecuté proyectos de manejo de datos para clientes de PanoImagen, implementando soluciones de web scraping con Python/Selenium y automatizando el procesamiento de grandes volúmenes de PDFs. Desarrollé scripts eficientes con Jupyter Notebook, Pandas y WSL que transformaron datos no estructurados en información accionable, reduciendo tiempos de procesamiento y mejorando la toma de decisiones del cliente.
+                {t('job2.description')}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 <motion.button 
@@ -244,7 +244,7 @@ const Index = () => {
           variants={containerVariants}
           className="mb-16"
         >
-          <h2 className="section-title">Trabajos / Proyectos</h2>
+          <h2 className="section-title">{t('section.projects')}</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <motion.div 
@@ -260,8 +260,8 @@ const Index = () => {
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2 text-[#8bd8bd]">Web Reforma</h3>
-                <p className="text-sm">Pagina de contacto y portfolio para empresa de reforma. Responsive, accesible con SEO.</p>
+                <h3 className="text-lg font-semibold mb-2 text-[#8bd8bd]">{t('project1.title')}</h3>
+                <p className="text-sm">{t('project1.description')}</p>
               </div>
             </motion.div>
             
@@ -280,8 +280,8 @@ const Index = () => {
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold mb-2 text-[#8bd8bd]">Proyecto {project}</h3>
-                  <p className="text-sm">Descripción breve del proyecto {project}</p>
+                  <h3 className="text-lg font-semibold mb-2 text-[#8bd8bd]">{`${t('project.description')} ${project}`}</h3>
+                  <p className="text-sm">{`${t('project.description')} ${project}`}</p>
                 </div>
               </motion.div>
             ))}
@@ -293,7 +293,7 @@ const Index = () => {
           variants={containerVariants}
           className="mb-16"
         >
-          <h2 className="section-title">Sobre mí</h2>
+          <h2 className="section-title">{t('section.about')}</h2>
           
           <div className="flex flex-col md:flex-row items-center gap-8">
             <motion.div variants={itemVariants} className="w-32 h-32 overflow-hidden flex-shrink-0">
@@ -306,14 +306,10 @@ const Index = () => {
             
             <motion.div variants={itemVariants}>
               <p className="mb-4">
-                Soy una persona entusiasta de la programacion y el diseño web, desde pequeño estaba
-                interesado por el tema artístico/diseño que he desarrollado por medio de la ilustración y
-                dibujo 🎨.
+                {t('about.p1')}
               </p>
               <p>
-                Duarante la pandemia comence el grado de sistemas con el que aprendí <span className="highlight">linux</span> y <span className="highlight">cómo
-                manejo de servidores</span> y redes, acabandolo en 2022 y comenzando el grado de <span className="highlight">desarrollo
-                web</span> acabandolo hace un tiempo.
+                {t('about.p2')}
               </p>
             </motion.div>
           </div>
@@ -321,7 +317,7 @@ const Index = () => {
       </main>
 
       <footer className="text-center pb-8 text-sm text-white/50">
-        <p>Copyright © 2024 sevdev</p>
+        <p>{t('footer.copyright')}</p>
       </footer>
     </motion.div>
   );
