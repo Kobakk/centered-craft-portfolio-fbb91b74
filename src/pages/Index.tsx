@@ -1,5 +1,6 @@
+
 import { motion } from "framer-motion";
-import { Github, Linkedin, FileType, Code, ServerCog } from "lucide-react";
+import { Github, Linkedin, FileType, Code, ServerCog, ExternalLink } from "lucide-react";
 import Navbar from "../components/Navbar";
 import { useLanguage } from "../contexts/LanguageContext";
 
@@ -247,23 +248,32 @@ const Index = () => {
           <h2 className="section-title">{t('section.projects')}</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <motion.div 
-              className="bg-black/10 rounded-lg overflow-hidden"
+            <motion.a 
+              href="https://reformasrolan.es/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-black/10 rounded-lg overflow-hidden group"
               variants={projectVariants}
               whileHover="hover"
             >
-              <div className="aspect-video bg-white/5">
+              <div className="aspect-video bg-white/5 relative">
                 <img 
-                  src="https://placehold.co/600x400/2b3146/8bd8bd" 
-                  alt="Proyecto 1"
+                  src="/lovable-uploads/732bde49-bb6b-432a-88c1-cf12b2b17a38.png" 
+                  alt="Web Reforma - Reformas Rolan"
                   className="w-full h-full object-cover"
                 />
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <ExternalLink className="text-white w-8 h-8" />
+                </div>
               </div>
               <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2 text-[#8bd8bd]">{t('project1.title')}</h3>
+                <h3 className="text-lg font-semibold mb-2 text-[#8bd8bd] flex items-center">
+                  {t('project1.title')}
+                  <ExternalLink size={16} className="ml-2 opacity-70" />
+                </h3>
                 <p className="text-sm">{t('project1.description')}</p>
               </div>
-            </motion.div>
+            </motion.a>
             
             {[2, 3, 4].map((project) => (
               <motion.div 
