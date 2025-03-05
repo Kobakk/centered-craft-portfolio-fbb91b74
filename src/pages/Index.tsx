@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Github, Linkedin, FileType, Code, ServerCog } from "lucide-react";
 import Navbar from "../components/Navbar";
@@ -88,8 +89,8 @@ const Index = () => {
               Web developer
             </motion.h2>
             
-            <motion.p className="mb-4">
-              👨‍💻 Programador con experiencia en desarrollo web y sistemas. Creo páginas optimizadas que generan resultados concretos. He desarrollado soluciones para empresas como North Market , PanoImagen y clientes independientes, implementando funcionalidades que automatizan procesos y mejoran conversiones.
+            <motion.p className="mb-4 text-justify">
+              👨‍💻 Programador con experiencia en desarrollo web y sistemas. Creo páginas optimizadas que generan resultados concretos. He desarrollado soluciones para empresas como <span className="highlight font-medium">North Market</span>, <span className="highlight font-medium">PanoImagen</span> y clientes independientes, implementando funcionalidades que automatizan procesos y mejoran conversiones.
             </motion.p>
 
             <div className="flex space-x-3 mb-6">
