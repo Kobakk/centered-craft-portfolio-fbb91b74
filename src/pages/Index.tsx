@@ -97,7 +97,7 @@ const Index = () => {
 
             <div className="flex space-x-3 mb-6">
               <motion.a 
-                href="#" 
+                href="https://www.linkedin.com/in/sebasveleza/" 
                 className="social-button"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -106,7 +106,7 @@ const Index = () => {
                 LinkedIn
               </motion.a>
               <motion.a 
-                href="#" 
+                href="https://github.com/Kobakk" 
                 className="social-button"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
