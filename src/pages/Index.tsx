@@ -301,7 +301,7 @@ const Index = () => {
               </div>
             </motion.a>
             
-            {[3, 4].map((project) => (
+            {/* {[3, 4].map((project) => (
               <motion.div 
                 key={project}
                 className="bg-black/10 rounded-lg overflow-hidden"
@@ -320,7 +320,7 @@ const Index = () => {
                   <p className="text-sm">{`${t('project.description')} ${project}`}</p>
                 </div>
               </motion.div>
-            ))}
+            ))} */}
           </div>
         </motion.section>
 
