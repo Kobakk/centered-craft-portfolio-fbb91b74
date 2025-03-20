@@ -68,7 +68,7 @@ const Index = () => {
           >
             <div className="w-32 h-32 mb-3 overflow-hidden">
               <img 
-                src="/media/perfilsebas.avif" 
+                src="/media/perfilsebas.webp" 
                 alt="Perfil"
                 className="rounded-full w-full h-full object-cover border-2 border-[#8bd8bd]"
               />
@@ -334,7 +334,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <motion.div variants={itemVariants} className="w-32 h-32 overflow-hidden flex-shrink-0">
               <img 
-                src="/media/perfilsebas.avif"
+                src="/media/perfilsebas.webp"
                 alt="Perfil" 
                 className="rounded-full w-full h-full object-cover border-2 border-[#8bd8bd]"
               />
