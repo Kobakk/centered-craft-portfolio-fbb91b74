@@ -68,7 +68,7 @@ const Index = () => {
           >
             <div className="w-32 h-32 mb-3 overflow-hidden">
               <img 
-                src="/lovable-uploads/eaa3918e-ad47-4bfa-9e94-d202b6c8fa6f.png" 
+                src="/media/perfilsebas.avif" 
                 alt="Perfil"
                 className="rounded-full w-full h-full object-cover border-2 border-[#8bd8bd]"
               />
@@ -257,7 +257,7 @@ const Index = () => {
             >
               <div className="aspect-video bg-white/5 relative">
                 <img 
-                  src="/lovable-uploads/732bde49-bb6b-432a-88c1-cf12b2b17a38.png" 
+                  src="/media/rolanreformas.avif" 
                   alt="Web Reforma - Reformas Rolan"
                   className="w-full h-full object-cover"
                 />
@@ -284,7 +284,7 @@ const Index = () => {
             >
               <div className="aspect-video bg-white/5 relative">
                 <img 
-                  src="/lovable-uploads/68fe286e-28fc-481a-a9ad-f4942bfd6c70.png" 
+                  src="/media/reytacos.avif" 
                   alt="El Rey de los Tacos"
                   className="w-full h-full object-cover"
                 />
@@ -334,7 +334,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <motion.div variants={itemVariants} className="w-32 h-32 overflow-hidden flex-shrink-0">
               <img 
-                src="/lovable-uploads/eaa3918e-ad47-4bfa-9e94-d202b6c8fa6f.png"
+                src="/media/perfilsebas.avif"
                 alt="Perfil" 
                 className="rounded-full w-full h-full object-cover border-2 border-[#8bd8bd]"
               />
