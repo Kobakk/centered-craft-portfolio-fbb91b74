@@ -60,10 +60,10 @@ const Index = () => {
         {/* Hero Section */}
         <motion.section 
           variants={containerVariants}
-          className="mb-16 flex flex-col md:flex-row items-start gap-8"
+          className="mb-16 flex flex-col md:flex-row items-center justify-center text-center"
         >
           <motion.div 
-            className="bg-black/10 rounded-lg p-4 text-center flex flex-col items-center"
+            className="bg-black/10 rounded-lg p-4 text-center flex flex-col items-center mb-6 md:mb-0 md:mr-8"
             variants={itemVariants}
           >
             <div className="w-32 h-32 mb-3 overflow-hidden">
@@ -82,7 +82,7 @@ const Index = () => {
             </motion.div>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="flex-1">
+          <motion.div variants={itemVariants} className="flex-1 text-center md:text-left">
             <motion.h1 className="text-4xl font-bold mb-2 text-[#8bd8bd]">
               {t('hero.name')}
             </motion.h1>
@@ -91,11 +91,11 @@ const Index = () => {
               {t('hero.jobTitle')}
             </motion.h2>
             
-            <motion.p className="mb-4 text-justify">
+            <motion.p className="mb-4 text-justify md:text-left">
               {t('hero.description')}
             </motion.p>
 
-            <div className="flex space-x-3 mb-6">
+            <div className="flex justify-center md:justify-start space-x-3 mb-6">
               <motion.a 
                 href="https://www.linkedin.com/in/sebasveleza/" 
                 className="social-button"
